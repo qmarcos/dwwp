@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARG0120CL. Guía de Referencia</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="reference" href="#">Guía de referencia <span class="sr-only">(current)</span></a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://about.me/qmarcos" target="_blank">Sobre el formador</a></li>
+                    <li><a href="#about-training">Sobre el curso</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="page-header">
+                    <h1>Desarrollo web con WordPress <small>Guía de referencia</small></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-5 col-md-4"><!-- sidebar -->
+                <div class="content-index">
+                    <h3>Índice</h3>
+                    <dl>
+                        <dt>Conceptos generales</dt>
+                        <dd><a href="#about">Sobre WordPress</a></dd>
+                        <dd><a href="#stats">Estadísticas</a></dd>
+                        <dd><a href="#opensource">WordPress.com vs WordPress.org</a></dd>
+                        <dd><a href="#usage">Usos</a></dd>
+                        <dd><a href="#features">Características</a></dd>
+                        <dd><a href="#community">Ecosistema y negocio</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Fundamentos</dt>
+                        <dd><a href="#stack">Tecnologías</a></dd>
+                        <dd><a href="#cms">Web y CMS</a></dd>
+                        <dd><a href="#users">Roles de Usuario</a></dd>
+                        <dd><a href="#themes-plugins">Temas y Plugins</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Tipos de contenido</dt>
+                        <dd><a href="#guttemberg">Editor de bloques</a></dd>
+                        <dd><a href="#pages">Páginas</a></dd>
+                        <dd><a href="#posts">Entradas / Posts</a></dd>
+                        <dd><a href="#categories">Categorías</a></dd>
+                        <dd><a href="#tags">Etiquetas</a></dd>
+                        <dd><a href="#comments">Comentarios</a></dd>
+                        <dd><a href="#menus">Menús</a></dd>
+                        <dd><a href="#media">Media</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Recursos</dt>
+                        <dd><a href="#themes">Temas</a></dd>
+                        <dd><a href="#plugins">Plugins</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Y también...</dt>
+                        <dd><a href="#ebooks">eBooks y cursos</a></dd>
+                        <dd><a href="#no-code">no-code</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 col-md-8"><!-- main content: Conceptos Generales -->
+                <div class="main">
+                    <h2>Sobre WordPress</h2>
+
+                    <h3 id="about">Qué es WordPress</h3>
+                    <blockquote>
+                        <p>WordPress es un sistema de gestión de contenidos (en inglés, <i>Content Management System o CMS</i>) gratuito y de código abierto, lanzado el <strong>27 de mayo de 2003</strong>. Está enfocado a la creación de cualquier tipo de página web. Originalmente alcanzó una gran popularidad en la creación de blogs, para luego convertirse en una de las principales herramientas para la creación de páginas web comerciales.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://es.wikipedia.org/wiki/WordPress" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Wikipedia [es]</a></li>
+                        <li><a href="https://es.wordpress.org/about/history/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Historia de WordPress [es]</a></li>
+                        <li><a href="https://es.wordpress.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.com [es]</a></li>
+                        <li><a href="https://es.wordpress.org/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.org [es]</a></li>
+                        <li><a href="https://wordpress.tv/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.TV [es/en]</a></li>
+                    </ul>
+
+
+                    <h3 id="stats">Estadísticas de WordPress</h3>
+                    <p>Aunque se creara en 2003 es uno de los proyectos con mayor evolución y popularidad existentes en Internet y más concretamente en el desarrollo web. En 2020 tiene cifras que reflejan claramente la relevancia de este sistema de publicación web:</p>
+
+                    <ul>
+                        <li>El 37% de los sitios web de Internet están basados en WP, <strong>con un incremento del 2% en el último año</strong>.</li>
+                        <li>Si nos fijamos solamente en sitios web dinámicos (con contenidos adminsitrables), representa aproximadamente el <strong>60% de Internet</strong>.</li>
+                        <li>En torno a <strong>400 millones de personas</strong> acceden a sitios web basados en WP, <strong>cada mes</strong>.</li>
+                        <li>Cerca del <strong>28% del comercio electrónico</strong> se basa en WordPress (WooComerce)</li>
+                        <li>Se han creado <strong>más de 50.000 plugins y 3.500 temas</strong> para ampliar su funcionalidad (solamente contando los oficiales)</li>
+                        <li>Cada día se crean <strong>más de 500 sitios web</strong> basados en WP.</li>
+                        <li>Wordpress está disponible en <strong>68 idiomas</strong>.</li>
+                    </ul>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://es.wordpress.org/about/stats/" target="_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Estadísticas oficiales [es]</a></li>
+                        <li><a href="https://www.isitwp.com/interesting-wordpress-stats-facts/" target="_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Curiosidades sobre WP [en]</a></li>
+                        <li><a href="https://wedevs.com/159677/wordpress-stats-facts-2019/" target="_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> +100 hechos sobre WP en 2020 [en]</a></li>
+                    </ul>
+
+
+                    <h3 id="opensource">WordPress.com vs WordPress.org</h3>
+                    <blockquote>
+                        <p>Existe una confusión habitual entre las dos versiones existentes de WordPress: wordpress.com y wordpress.org. La primera es una plataforma "cerrada" de publicación, un modelo de negocio basado en un servicio en la nube para la publicación web. El segundo es el proyecto de código abierto, que cada usuario puede descargar o instalarse en su propio servidor, libre de restricciones y con todas las capacidades disponibles.</p>
+                    </blockquote>
+
+                    <p>No es que un modelo sea mejor que el otro, dependerá del uso y propósito que persigamos... en algunos aspectos tener una plataforma cerrada tiene sus ventajas y en otros casos es más importante no estar limitados.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://es.wordpress.org/support/article/wordpress-org-and-wordpress-com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Explicación oficial [es]</a></li>
+                        <li><a href="https://es.wordpress.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.com [es]</a></li>
+                        <li><a href="https://es.wordpress.org/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.org [es]</a></li>
+                        <li><a href="https://bitrebels.com/wp-content/uploads/2016/10/WordPressCom-vs-WordPressOrg.png" target="_blank"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Infografía Comparativa [en]</a></li>
+                    </ul>
+
+
+
+                    <h3 id="usage">Usos de WordPress</h3>
+                    <blockquote>
+                        <p>Con la evolución que ha tenido desde el 2003, actualmente WordPress se puede usar para crear prácticamente cualquier tipología de sitio web. Se ha convertido en una herramienta muy versátil de publicación en Internet.</p>
+                    </blockquote>
+
+                    <p>Aunque inicialmente se concibió para la publicación de contenidos con tipología de cuaderno de bitácora o <i>blog</i>, su evolución ha sido a la de gestor de contenidos integral.</p>
+
+                    <p>A partir de ese punto, con la apertura de sus funcionalidades a terceros mediante el uso de "plugins" y "temas", se han creado multitud de proyectos que le dotan de una cantidad ingente de aplicaciones:</p>
+
+                    <ul>
+                        <li>Webs corporativas.</li>
+                        <li>Webs documentales / wikis.</li>
+                        <li>Ecommerce.</li>
+                        <li>Sistemas de reservas.</li>
+                        <li>Publicaciones digitales (prensa, medios, etc.)</li>
+                        <li>Foros y comunidades de usuarios cerradas</li>
+                        <li>Plataformas de suscripción.</li>
+                        <li>Intranets.</li>
+                        <li>Redes comunitarias.</li>
+                        <li>Redes de contenidos / sitios web (mediante WordPress MU ⏤ Multisite).</li>
+                        <li>Etc.</li>
+                    </ul>
+
+
+                    <h3 id="features">Características</h3>
+                    <blockquote>
+                        <p>Simplicidad y flexibilidad son las dos características claves de WordPres, curiosamente siendo aplicables tanto a personas si conocimientos como a los profesionales del desarrollo web.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://es.wordpress.org/about/features/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Principales características</a></li>
+                    </ul>
+
+                    <p>Existen <a href="https://es.wordpress.org/about/features/" target="_blank">una serie de características</a> que son las que han hecho que esta solución haya ganado la confianza de todo tipo de usuarios, desde personas sin conocimientos de informática a empresas especializadas en la creación de sitios web profesionales.</p>
+
+                    <p>Éstas son algunas de las más relevantes:</p>
+
+                    <ul>
+                        <li><strong>Panel de gestión simple e intuitivo</strong>.</li>
+                        <li><strong>Ecosistema y comunidad impresionante en torno al mismo</strong>.</li>
+                        <li>Soporte e instalación por casi la totalidad de los proveedores de alojamiento (hosting).</li>
+                        <li>Cumplimiento compleeto de los estándares web.</li>
+                        <li>Muy <strong>buena gestión a nivel de SEO</strong>.</li>
+                        <li>Soporte para multitud <strong>idiomas</strong>.</li>
+                        <li>Soporte a gran <strong>variedad de tipologías de web</strong>i>
+                        <li>Muy <strong>extensible gracias al uso de plugins</strong> (contenidos, idiomas, ecommerce, social, seo).</li>
+                        <li><strong>Controles de edición / publicación  de serie</strong>rios, etc.</li>
+                        <li>Sencillez en la gestión de medios.</li>
+                    </ul>
+
+
+                    <h3 id="community">Ecosistema y negocio</h3>
+                    <blockquote>
+                        <p>El ecosistema que se ha creado alrededor de este software le ha permitido convertirse en un referente, y precisamente su filosofía de código abierto ha permitido a la comunidad potenciar sus capacidades a niveles que de otra forma hubiera sido imposible.</p>
+                    </blockquote>
+
+                    <p>Como hemos visto, una de las características que hace a WordPress especial es el ecosistema se ha generado torno a él, tanto en comunidad y recursos, como en el negocio que se ha generado alrededor del mismo. Las principales columnas de ese ecosistema son <strong>la comunidad y el mercado profesional</strong>.</p>
+
+                    <p>Al final existe un mercado profesional con importantes volúmenes de negocio basasdo en convertir a WordPress en una herramienta <a href="https://www.xataka.com/otros/programar-escribir-codigo-posible-asi-funciona-no-code" target="_blank">no-code o la democratización del software</a>.</p>
+
+                    <p>Ejemplos del nivel del que estamos hablando son <a href="https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226" target="_blank">temas</a> que se ha vendido en <strong>más de 615.000 ocasiones con un beneficio acumulado de más 37 millones de dólares</strong>, o plugins con <strong>más de 400.000 ventas y beneficio acumulado por valor de 11.800.000 dólares</strong>.</p>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h6>Comunidad</h6>
+                            <ul>
+                                <li>Su comunidad es activa y pro-activa.</li>
+                                <li>Se celebran numerosos eventos denominados <a href="https://es.wordpress.org/colabora/comunidad/meetups-en-activo/" target="_blank">Wordcamps</a>.</li>
+                                <li>La filosfía opensource se ha trasladado al altruismo de muchos de sus miembros.</li>
+                                <li>Tiene una mentalidad abierta a cualquier persona.</li>
+                                <li>Se organizan grupos locales denominados <a href="https://es.wordpress.org/colabora/comunidad/meetups-en-activo/" target="_blank">meetups</a>.</li>
+                                <li>Abarca perfiles profesionales y no profesionales.</li>
+                                <li>Se crean temas y plugins gratuitos y opensource.</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <h6>Negocio</h6>
+                            <ul>
+                                <li>Muchas empresas de diseño y desarrollo web lo usan como principal software de desarrollo.</li>
+                                <li>Existe un mercado propio en torno a sus temas.</li>
+                                <li>Existe un mercado propio en torno a sus plugins.</li>
+                                <li>Se han creado temas (multipropósito) y plugins (macroplugins) que permiten crear a su vez.</li>
+                                <li>Permite realizar sobre él desarrollo a medida.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://es.wordpress.org/colabora/comunidad/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Comunidad WordPress en España [es]</a></li>
+                        <li><a href="https://make.wordpress.org/chat/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Grupo de slack oficial [es]</a></li>
+                        <li><a href="https://es.wordpress.org/support/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Foros de comunidad [es]</a></li>
+                        <li><a href="https://trello.com/b/Pj1h64BZ/calendario-oficial-wordpress-espa%C3%B1a" target="_blank"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Calendario de meetups en España [es]</a></li>
+                    </ul>
+
+
+
+                    <!-- main content: Fundamentos de WordPress -->
+                    <h2>Fundamentos de WordPress</h2>
+
+                    <h3 id="stack">Tecnologías</h3>
+                    <blockquote>
+                        <p>WordPress está basado en el stack LAMP (Linux, Apache, MySQL y PHP) que durante muchos años ha sido la combinación más extendida para el desarrollo de proyectos web. Igualmente soporta <a href="https://es.wordpress.org/about/requirements/" target="_blank">otras tecnologías y combinaciones</a>.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://es.wordpress.org/about/requirements/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Requerimientos técnicos</a></li>
+                    </ul>
+
+                    <h4>Sistema Operativo y Servidor Web</h4>
+                    <p>Si bien la instalación más habitual es en un sistema operativo Linux bajo un servidor web Apache, WordPress permite otras configuraciones, tanto en sistemas operativos diferentes (Windows) como servidores web (nginx, por ejemplo).</p>
+
+                    <h4>Lenguaje PHP (Hypertext Preprocessor)</h4>
+                    <p>WordPress está desarrollado en <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank">PHP</a>, que es uno de los lenguajes de lado de servidor más extendido en el desarrollo web. PHP encaja perfectamente en la filosofía de WordPress ya que también es un lenguaje de código abierto.</p>
+
+                    <h4>Bases de datos MySQL</h4>
+                    <p>WordPress está desarrollado en <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank">PHP</a>, que es uno de los lenguajes de lado de servidor más extendido en el desarrollo web. PHP encaja perfectamente en la filosofía de WordPress ya que también es un lenguaje de código abierto.</p>
+
+
+
+                    <h3 id="cms">Web y CMS</h3>
+                    <blockquote>
+                        <p>WordPress está formado por 2 partes principales: la web pública y un panel de gestión de contenidos, habitualmente denominado "wp-admin"</a>.</p>
+                    </blockquote>
+
+                    <p>WordPress es un software de publicación web, y como tal requiere satisfacer 2 partes vitales en cualquier proyecto de este tipo. Por un lado la publicación en sí de la web en Internet, para que sea accesible por cualquier persona, y por otro lado una herraamienta para poder actualizar y mantener dicha web.</p>
+
+                    <h4>El Gestor de Conteindos (CMS)</h4>
+                    <p>Esta parte de WordPress es posiblemente la más importante y la que ha convertido a la herramienta en lo que es hoy en día. De uso muy sencillo, no pierde flexibilidad ni potencia, a la hora de permitir gestionar grandes cantidades de información, manteniendo un buen rendimiento.</p>
+
+                    <h4>La Web</h4>
+                    <p>La web pública es generada dinámicamente a partir de los datos creados y almacenados desde el gestor de contenidos. Estos datos se organizan en diferentes tipos de estructuras que a través del tema cobran forma y vida para mostrarse al usuario. La flexibilidad a la hora de mostrar esos datos a través de temas, hace que una misma herramienta de gestión de contenidos pueda mostrarse con muchos formatos diferentes, como vimos en el punto <a href="#usage">Usos de WordPress.</a></p>
+
+                    <h4>Otros aspectos</h4>
+                    <p>Adicionalmente WordPress cuenta con mecanismos adicionales para reforzar la gestión de contenidos o el consumo de los datos como son la posibilidad de actualizar y enviar contenidos desde fuera del CMS, o consumir los contenidos de forma (<a href="https://developer.wordpress.org/rest-api/" target="_blank">mediante su API REST</a>) pura para alimentar otros sistemas (es decir, emplear WordPress como un gestor de contenidos puro (<i>Headless CMS</i>), sin la parte web y poder alimentar, por ejemplo apps).</p>
+
+
+
+                    <h3 id="users">Roles de Usuario</h3>
+                    <blockquote>
+                        <p>WordPress tiene integrado un sistema de usuarios que permite disponer de un control más fino tanto en la gestión de contenidos, como en el acceso a la información en la web pública.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/roles-usuario/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Roles de usuario</a></li>
+                    </ul>
+
+                    <p>Dentro de las principales entidades que permite gestionar WordPress, se encuentran los usuarios. WordPress ofrece de partida los siguientes tipos de usuario:</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Suscriptor</h4>
+                    <p>Usuarios con el rango más bajo, podrían acceder a contenidos en la web pública marcaados como privados (o para suscriptores). Sería el mecanismo adecuado para filtrar el acceso a contenidos solamente para usuarios registrados.</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Colaborador</h4>
+                    <p>Usuarios que tienen la capacidad de dar de alta y/o modificar contenido desde el panel de gestión. Los contenidos nuevos generados por estos usuarios requieren la moderación de usuarios de mayor rango. Un uso habitual de este perfil se da cuando se requiere de muchos usuarios para alimentar el contenido de la web.</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Autor</h4>
+                    <p>Perfil muy similar al colaborador, con la diferencia que los contenidos dados de alta por él pueden ser publicados sin necesidad de revisión.</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Editor</h4>
+                    <p>Es el perfil con mayor cantidad de permisos relativos a la gestión de contenidos, pero sin la capacidad de realiar tareas de configuración y mantenimiento en lo que es el sistema de WordPress (instalaciones, actualizaciones, etc.)</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Administrador</h4>
+                    <p>Perfil con acceso total al sitio web tanto para la administración de contenidos, como para acciones técnicas de mantenimiento, gestión de usuarios, etc.</p>
+
+                    <h4><span class="glyphicon glyphicon-user"></span> Súper Administrador</h4>
+                    <p>Perfil que administra una red de sitios web basados en WordPress, teniendo acceso a la configuración de la red y a cada uno de los sitios que la conforman.</p>
+
+                    <ul class="list-unstyled list-link">
+                        <li><a href="https://wordpress.org/plugins/user-role-editor/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Plugin User Role Editor, para edición sencilla de roles.</a></li>
+                    </ul>
+
+
+
+                    <h3 id="themes-plugins">Temas y Plugins</h3>
+                    <blockquote>
+                        <p>Los temas y plugins son los principales responsables de la flexibilidad y versatilidad de WordPress. Los temas nos permiten cambiar totalmente la parte visual de la web pública del sitio, y los plugins extender sus funcionalidades.</p>
+                    </blockquote>
+
+
+                    <p>Los temas y plugins son el núcleo duro de los mecanismos de los que dispone WP para haberse convertido en el software de publicación web que es hoy en día. Combinando ambas herramientas una misma base puede convertirse en casi cualquier tipología de web o negocio online.</p>
+
+                    <h4><span class="glyphicon glyphicon-tint"></span> Temas</h4>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/temas/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Temas</a></li>
+                    </ul>
+
+                    <p>Los temas nos permiten cambiar totalmente la apariencia del sitio web público de nuestro WordPress, tanto en estructura como en su aspecto visual. Existen temas gratuitos y temas de pago, e incluso temas que vienen equipados de serie con un conjunto de herramientas y plugins determinados para ser una solución vertical llave en mano.</p>
+
+                    <p>La tendencia en los temas profesionales es crear cada vez temas más flexibles, de forma que un mismo tema se convierte en un generador de temas, son lo que se conoce como <strong>temas multipropósito</strong> clave de este tipo de temas son los editores de bloques o editores avanzados, que habitualmente son precisamente... plugins!</p>
+
+                    <h4><span class="glyphicon glyphicon-th-large"></span> Plugins</h4>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/plugins/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Plugins</a></li>
+                    </ul>
+
+                    <p>Los plugins son como su nombre indica extensiones del sistema, que pueden tener objetivos muy diferentes: desde permitir mostrar algún elemento adicional en algún tipo de contenido de WordPress a dotar al sistema de una funcionalidad completamente nueva.</p>
+
+                    <p>Los plugins se instalan en nuestro sitio web de una forma muy sencilla, y dependiendo de su complejidad pueden requerir de una configuración propia. En algunos casos, dotan al sitio de tanta funcionalidad que incluso modifican el panel de gestión de contenidos con apartados propios o nuevos elementos en los existentes, para poder usarlos.</p>
+
+                    <p>Existen algunos plugins especialmente grandes en cuanto a funcionalidad y modificaciones sobre la instalación base, que son casi versiones del propio WordPress. Estos plugins se suelen denominar <strong>macro plugins</strong> y dos ejemplos habituales son <a href="https://woocommerce.com/" target="_blank">wooCommerce</a> (para comercio electrónico) y <a href="https://wpml.org/es/" target="_blank">WPML</a> (para gestión de sitios web multi-idioma)</p>
+
+
+
+                    <h2>Tipos de Contenido</h2>
+
+                    <p>Una de las características que mejor ha funcionado desde los inicios en WordPress han sido sus taxonomías básicas, para poder crear la arquitectura de contenidos de casi cualquier sitio web. En los siguientes puntos veremos por encima la misión de cada uno de los principales tipos de contenidos con los que contamos.</p>
+
+
+                    <h3 id="guttemberg">Sobre el Editor de Bloques</h3>
+                    <p>Adicionalmente, el núcleo de los tipos de contenidos gestionados por WordPress son las páginas y las entradas, y ambas se basan en un editor, que desde la versión 5 ha cambiado notablemente (el nuevo editor se llama Guttemberg y se conoce como el editor de bloques, frente al anterior que era un editor de texto enriquecido convencional)</p>
+
+                    <ul class="list-unstyled link-doc">
+                        <a href="https://wordpress.org/support/article/wordpress-editor/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Editor de bloques</a>
+                    </ul>
+
+
+
+                    <h3 id="pages">Páginas</h3>
+                    <blockquote>
+                        <p>Las páginas nos permiten crear contenido que conceptualmente es único en nuestro sitio web.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <a href="https://wordpress.com/es/support/paginas/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Páginas</a>
+                    </ul>
+
+                    <p>Cuando creamos una página, estamos pensando en dotar a nuestra web de <strong>un espacio donde albergar un contenido único</strong>, que solamente existirá con tipología y/o estructura en ese lugar. Ejemplos claros son la página de contacto, la página de acerca de, la <i>homepage</i>...</p>
+
+                    <p>A nivel jerárquico, <strong>una página puede contener a su vez otras páginas</strong>, y así sucesivamente. Esto se logra a través de la asignación de una página padre cuando estamos creando una nueva. Ejemplos de esta situación pueden darse cuando en la sección "acerca de" tenemos mucho contenido y deseamos partirlo en subapartados, tales como historia, filosofía y equipo.</p>
+
+
+
+                    <h3 id="posts">Entradas o Posts</h3>
+                    <blockquote>
+                        <p>Las entradas (también conocidas como posts) son contenidos únicos, pero que sí comparten estructura con otros similares, y además tienen una concepción iterativa.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/entradas/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Entradas</a></li>
+                    </ul>
+
+                    <p>El caso más común para ejemplificar lo que es una entrada es, precisamente, el original. En un cuaderno de bitácora o diario, una entrada sería el cotenido que alberga cada día. Por tanto, <strong>estamos mostrando una intencionalidad iterativa (escribir cada día) y un formato similar</strong>. En ese caso WordPress nos ofrece este tipo de contenido, mucho más apto que el uso de páginas (aunque fuera factible).</p>
+
+                    <p>Otro ejemplo de libro serían las noticias dentro de un proyecto de tipo publicación digital, pero más allá de los planteamientos tan claros, podemos usar las entradas casi para cualquier cosa que represente un item en un conjunto de cosas del mismo tipo:</p>
+
+                    <ul>
+                        <li>Miembros dentro de un equipo.</li>
+                        <li>Oficinas dentro de una empresa.</li>
+                        <li>Negocios dentro de un directorio.</li>
+                        <li>Productos dentro de una tienda.</li>
+                        <li>Titulaciones en un centro educativo.</li>
+                        <li>...</li>
+                    </ul>
+
+                    <p>A nivel jerárquico, las entradas <strong>se organizan mediante el uso de categorías</strong>, de manera que la categoría es la que representa el conjunto, y la entrada el elemento individual del mismo.</p>
+
+
+                    <h3 id="categories">Categorías</h3>
+                    <blockquote>
+                        <p>Las categorías es la principal opción para organizar conceptualmente los contenidos de tipo entrada / post.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/entradas/categorias/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Categorías</a></li>
+                    </ul>
+
+                    <p>Las categorías nos permiten clasificar las entradas / posts de nuestro sitio web de forma lógica y <strong>establecer relaciones jerárquicas</strong> entre ellas, ya que <strong>una categoría puede contener subcategorías</strong>.</p>
+
+                    <p>En un primer nivel las categorías no tienen por qué tener una relación jerárquica y pueden disponerse para propósitos totalmente diferentes.</p>
+
+                    <p>Si existen una serie de categorías que conceptualmente están relacionadas, es bueno crear una categoría padre de primer nivel para contener a las demás.</p>
+
+                    <p>Ejemplos clasícos de categorías de primer nivel serían las secciones en un diario (sucesos, deportes, nacional, política, etc.) y en el caso de subcategorías, dentro de deportes podríamos tener (running, padel, golf...).</p>
+
+                    <p>Pero al igual que sucede con las entradas, las categorías pueden tener objetivos para tipologías de contenidos muy diferentes, por ejemplo:</p>
+
+                    <ul>
+                        <li>Familias y subfamilias en una web de biología.</li>
+                        <li>Áreas de negocio en una empresa (diseño, web, apps...)</li>
+                        <li>Departamentos en una tienda online.</li>
+                        <li>Áreas de estudios en una web de un centor educativo.</li>
+                        <li>...</li>
+                    </ul>
+
+
+                    <h3 id="tags">Etiquetas / Tags</h3>
+                    <blockquote>
+                        <p>Las etiquetas (o tags) son otro mecanismo de organización de entradas, con una filosofía mucho más transversal.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/entradas/etiquetas/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Etiquetas</a></li>
+                    </ul>
+
+                    <p>Las etiquetas tienen la misma misión que las categorías, la de relacionar entradas, pero con una filosofía mucho más transversal. El símil que mejor suele funcionar para entender <strong>su rol en la arquitectura de contenidos de nuestro sitio web es el de "temáticas".</strong></p>
+
+                    <p>El uso de etiquetas permite navegar de forma transversal y relacionar entradas que no necesariamente tienen por qué pertenecer a las mismas categorías. Esto <strong>aumenta la capacidad de navegación horizontal del sitio web</strong>, que está constatado que tiene grandes beneficios a nivel de consumo de contenidos.</p>
+
+                    <p>Se aconseja un uso de entre 5 y 15 etiquetas máximo por contenido, para poder crear un nivel de relaciones adecuado entre nuestros contenidos. </p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://wordpress.com/es/support/entradas/diferencias-entre-categorias-y-etiquetas/" target="_blank"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Diferencias entre categorías y etiquetas</a></li>
+                    </ul>
+
+
+                    <h3 id="comments">Comentarios</h3>
+                    <blockquote>
+                        <p>Los comentarios permiten establecer una comunicación bidireccional entre el/los creadores de contenido y los consumidores de los mismos.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/configuracion/#comentarios" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Comentarios</a></li>
+                    </ul>
+
+                    <p>Tanto las páginas como las entradas de WordPress permiten habilitar el uso de comentarios, para obtener feedback de los usuarios que acceden a ellas. WordPress tiene un sistema básico de comentarios que permite la moderación de los mismos con diferentes criterios o de forma manual.</strong></p>
+
+                    <p>Existen plugins que mejoran la funcionalidad de comentarios nativa de WordPress, aunque el sistema básisco es suficientemente potente para cubrir las necesidades más habituales de un sitio web. </p>
+
+
+                    <h3 id="menus">Menús Personalizados</h3>
+                    <blockquote>
+                        <p>WordPress permite la gestión de menús personalizados, así como la asignación de los mismos a diferentes estructuras del tema.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.com/es/support/menus-personalizados/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Menús Personalizados</a></li>
+                    </ul>
+
+                    <p>Esta funcionalidad, realmente útil, fue incorporada desde la versión 3 de WordPress a través de nuevos mecanismos de los que se dotaron a los temas.</p>
+
+                    <p>Los menús nos permiten decidir qué contenidos potenciar en los elementos de navegación de nuestro sitio web y cómo organizarlos, incluso alterando la estructura natural de los mismos. Posteriormente podremos elegir en las zonas habilitadas para ello, qué menú mostrar.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://ayudawp.com/imagenes-en-los-menus-personalizados-de-wordpress/" target="_blank"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Cómo añadir imágenes a los menús [es]</a></li>
+                        <li><a href="https://wordpress.org/plugins/menu-image/" target="_blank"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Menu image icons ⏤ Plugin</a></li>
+                    </ul>
+
+
+
+                    <h3 id="media">Media</h3>
+                    <blockquote>
+                        <p>Se conoce como biblioteca de medios el repositorio de ficheros que nos ofrece WordPress para albergar imágenes, audios, documentos, etc..</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.org/support/article/media-library-screen/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Ayuda oficial. Media Library [en]</a></li>
+                    </ul>
+
+                    <p>La biblioteca de medios actua como un repositorio donde poder albergar los ficheros que queremos emplear en nuestro sitio web.</p>
+
+                    <p>Al subir nuestros archivos a la biblitoeca los podremos reutilizar en contenidos que hagan uso de ellos, optimizando por tanto el espacio en disco de nuestra web.</p>
+
+                    <p>Los tipos de medios más habituales son las imágenes, pero se pueden subir archivos de otras tipologías como audios, videos, pdfs, office, open office, zip. La lista es realmente extensa como se refleja <a href="https://developer.wordpress.org/reference/functions/get_allowed_mime_types/" target="_blank">en el último comentario de esta entrada del Codex de WordPress</a>.</p>
+
+
+
+                    <h2>Recursos</h2>
+
+                    <p>WordPress cuenta con un volumen de recursos en la red difícilmente igualable por otra plataforma, tanto en su versión profesional con portales temáticos, como en su versión más abierta con aportaciones de miles de usuarios por todo Internet.</p>
+
+                    <p>En los siguientes bloques de enlaces, recogemos de forma categorizada algunos de los recursos más relevantes sobre temas y plugins.</p>
+
+
+                    <h3 id="themes">Temas</h3>
+                    <blockquote>
+                        <p>Existen temas gratuitos, libres y de pago, así como temas pensados de forma muy específica para un tipo de web como otros mutipropósito, que permiten construir diferentes webs a partir de ellos.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.org/themes/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Oficial. Repositorio de temas</a></li>
+                    </ul>
+
+                    <p>Aunque existen temas gratuitos con una calidad considerable, generalmente los temas de pago ofrecen no solo más opciones y personalización, sino también soporte y documentación. Teniendo en cuenta que el coste de los mismos está en torno a los 50 euros, <strong>en caso de que el proyecto sea comercial, suele ser mucho más recomendable la adquisición de un tema profesional.</strong></p>
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Temas gratuitos</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://athemes.com/wordpress-themes/free/" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Athemes Free Themes</a></li>
+                                <li><a href="https://justfreethemes.com/" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Just Free Themes</a></li>
+                                <li><a href="https://themeforest.net/free/wordpress-themes" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Theme Forest Free Themes</a></li>
+                                <li><a href="https://themeisle.com/wordpress-themes/free/" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Theme Isle Free Themes</a></li>
+                                <li><a href="https://es.wordpress.org/themes/" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> WordPress.org Directorio de Temas</a></li>
+                                <li><a href="https://www.google.com/search?q=free+themes+wordpress" target="_blank"><span class="glyphicon glyphicon-tint" aria-hidden="true"></span> Google Search</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Temas de pago</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://themeforest.net/category/wordpress" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Theme Forest</a></li>
+                                <li><a href="https://www.templatemonster.com/es/temas-wordpress-tipo/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Template Monster</a></li>
+                                <li><a href="https://athemes.com/wordpress-themes/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Athemes</a></li>
+                                <li><a href="https://themetrust.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Theme Trust</a></li>
+                                <li><a href="https://colorlib.com/wp/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> ColorLib</a></li>
+                                <li><a href="https://themify.me/themes" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Themify</a></li>
+                                <li><a href="https://es.wordpress.org/themes/commercial/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress.org Directorio de Temas</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Site Builders o constructores de páginas</h4>
+                    <p>Además de los temas multipropósito, en la actualidad está muy popularizado el uso de site builders para la creación de páginas web con WordPress.</p>
+
+                    <p>Los "site builders" son una combinación normalmente de tema + macro-plugin que permite editar los contenidos de tipo página y entrada con una interfaz visual, combinando multitud de tipologías de contenido prefabricadas, pero a la vez personalizables.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://elementor.com/pages/number-one-wordpress-page-builder/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Elementor</a></li>
+                        <li><a href="https://www.elegantthemes.com/gallery/divi/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Divi</a></li>
+                        <li><a href="https://www.wpbeaverbuilder.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Beaver Builder</a></li>
+                        <li><a href="https://visualcomposer.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Visual Composer</a></li>
+                    </ul>
+
+
+                    <h3 id="plugins">Plugins</h3>
+                    <blockquote>
+                        <p>Con los plugins podemos extender la funcionalidad de WordPress, para dotarle de opciones que de otra manera requerirían de desarrollo.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-doc">
+                        <li><a href="https://wordpress.org/plugins/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria="hidden"></span> Oficial. Repositorio de plugins</a></li>
+                    </ul>
+
+                    <p>Los plugins actuán sobre casi cualquier parte de WordPress que nos podamos imaginar, para mejorarla, ampliarla o modificarla, pero además abren nuevas capacidades, por lo que su variedad en tipologías y funciones es enorme.</p>
+
+                    <p>Al igual que ocurre con los antivirus en un sistema operativo, <strong>no es buena idea instalar varios de estos plugins en un mismo sitio web</strong>, ya que además de pisarse muchas funcionaliades, consumen recursos y suelen generar incompatibilidades. Solo es recomendable hacerlo combinando algún plugin muy específico con otro generalista que no cubra esa característica.</p>
+
+                    <p>A continuación tenemos una <strong>categorización por las principales áreas de actuación de los plugins</strong>, recogiendo en cada una de ellas el o los más destacados.</p>
+
+                    <h4><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Seguridad</h4>
+                    <blockquote>
+                        <p>La seguridad es uno de los aspectos más delicados de WordPress por lo que como es lógico existen multitud de plugins que persiguen mejorarla.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://wordpress.org/plugins/really-simple-ssl/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Really Simple SSL</a></li>
+                        <li><a href="https://wordpress.org/plugins/cookie-law-info/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> GDPR Cookies</a></li>
+                        <li><a href="https://wordpress.org/plugins/wordfence/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordFence</a></li>
+                        <li><a href="https://es.wordpress.org/plugins/all-in-one-wp-security-and-firewall/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> All in One WP Security & Firewall</a></li>
+                        <li><a href="https://wordpress.org/plugins/better-wp-security/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> iTheme Security (Better WP Security)</a></li>
+                        <li><a href="https://wordpress.org/plugins/jetpack/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> JetPack</a></li>
+                        <li><a href="https://wordpress.org/plugins/akismet/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Akismet (para el SPAM)</a></li>
+                        <li><a href="https://wordpress.org/plugins/antispam-bee/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Antispam Bee (para el SPAM)</a></li>
+                        <li><a href="https://wordpress.org/plugins/user-role-editor/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User Role Editor</a></li>
+                    </ul>
+
+
+                    <h4><span class="glyphicon glyphicon-search" aria-hidden="true"></span> SEO</h4>
+                    <blockquote>
+                        <p>Aunque el rendimiento SEO de un WP convencional puede ser muy bueno, existen plugins que dan un paso más en la capacidad de mejorar nuestro posicionamiento.</p>
+                    </blockquote>
+
+                    <p>Aunque haya plugins que actúan en algún aspecto muy específico de SEO, en esta lista recogemos los que cubren la temática de una forma más global, aportando mejoras en la mayoría de aspectos.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Yoast SEO</a></li>
+                        <li><a href="https://wordpress.org/plugins/all-in-one-seo-pack/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> All in One SEO Pack</a></li>
+                        <li><a href="https://wordpress.org/plugins/seo-by-rank-math/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress SEO Plugin</a></li>
+                        <li><a href="https://wordpress.org/plugins/jetpack/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> JetPack</a></li>
+                        <li><a href="https://wordpress.org/plugins/wp-seopress/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> SEOPress</a></li>
+                        <li><a href="https://wordpress.org/plugins/redirection/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Redirection</a></li>
+                    </ul>
+
+                    <h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Contenidos</h4>
+                    <blockquote>
+                        <p>Existen multitud de plugins que permiten mejorar la gestión de contenidos, o realizar tareas puntuales que la plataforma no soporta.</p>
+                    </blockquote>
+
+                    <p>Los plugins que se muestran a continuación tienen finalidades muy dispares, pero todos tienen en común que sirven o bien para mejorar la arquitecetura de contenidos de la web, o relacionar contenidos o mejorar el consumo de los mismos a través de otros medios, newsletter, redes sociales, etc.</p>
+
+                    <p>De entre todos, descatacmos el plugin <a href="https://wordpress.org/plugins/advanced-custom-fields/" target="_blank">ACF (Advanced Custom Fields)</a> y <a href="https://www.advancedcustomfields.com/pro/" target="_blank">su versión PRO</a>, que nos permite añadir campos personalizados a los contenidos, para ampliar y mejorar la esrtructuración de los mismos.</p>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Contenido y arquitectura</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/advanced-custom-fields/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Advanced Custom Fields (ACF y ACF Pro)</a></li>
+                                <li><a href="https://wordpress.org/plugins/classic-editor/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Classic Editor</a></li>
+                                <li><a href="https://wordpress.org/plugins/siteorigin-panels/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Page Builder</a></li>
+                                <li><a href="https://wordpress.org/plugins/yet-another-related-posts-plugin/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Yet another related post plugin (YARPP)</a></li>
+                                <li><a href="https://wordpress.org/plugins/wordpress-popular-posts/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress Popular Posts</a></li>
+                                <li><a href="https://wordpress.org/plugins/amp/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> AMP Pages</a></li>
+                                <li><a href="https://wordpress.org/plugins/menu-image/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Menu image, icons, svg...</a></li>
+                                <li><a href="https://wordpress.org/plugins/broken-link-checker/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Broken Link Checker (también para SEO)</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/coming-soon/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Coming Soon, Under Construction, Maintenance</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/maintenance/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Maintenance</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/wp-maintenance-mode/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Maintenance Mode</a></li>
+                                <li><a href="https://wordpress.org/plugins/the-events-calendar/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Events Calendar</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Galerías de imágenes</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/foogallery/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> FooGallery Image Gallery</a></li>
+                                <li><a href="https://wordpress.org/plugins/photo-gallery/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> PhotoGallery by 10Web</a></li>
+                                <li><a href="https://wordpress.org/plugins/nextgen-gallery/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> NEXTGEN Gallery</a></li>
+                                <li><a href="https://wordpress.org/plugins/smart-slider-3/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Smart Slider 3</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Redes Sociales y Márketing</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/disqus-comment-system/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Disqus Comment System</a></li>
+                                <li><a href="https://wordpress.org/plugins/disable-comments/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Disable Comments</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/wp-live-chat-software-for-wordpress/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Live Chat</a></li>
+                                <li><a href="https://wordpress.org/plugins/mailchimp-for-wp/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Mailchimp for WordPress</a></li>
+                                <li><a href="https://wordpress.org/plugins/addthis/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPres Share Buttons - Addthis</a></li>
+                                <li><a href="https://wordpress.org/plugins/add-to-any/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Add to Any Share Buttons</a></li>
+                                <li><a href="https://wordpress.org/plugins/sassy-social-share/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WordPress Social Sharing</a></li>
+                                <li><a href="https://wordpress.org/plugins/social-icons/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Social Icons</a></li>
+                                <li><a href="https://wordpress.org/plugins/ultimate-social-media-icons/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Ultimate Social Media Buttons & Icons</a></li>
+                                <li><a href="https://wordpress.org/plugins/shared-counts/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Shared Counts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Analíticas</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/wp-statistics/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Statistics</a></li>
+                                <li><a href="https://wordpress.org/plugins/ga-google-analytics/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> GA Google Analytics</a></li>
+                                <li><a href="https://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Google Analytics Dashboard</a></li>
+                                <li><a href="https://wordpress.org/plugins/duracelltomi-google-tag-manager/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Google Tag Manager for WP</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Copia de seguridad y importación / exportación</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://es.wordpress.org/plugins/duplicator/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Duplicator</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/updraftplus/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Updraft Plus Backup</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/wp-all-import/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP All Import</a></li>
+                                <li><a href="https://wordpress.org/plugins/users-customers-import-export-for-wp-woocommerce/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Import / Export Users</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <h4><span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> Traducciones</h4>
+                    <blockquote>
+                        <p>WordPress no soporta los contenidos multi-idioma de forma nativa, por lo que existen plugins que nos permiten dotarle de esa funcionalidad tan importante.</p>
+                    </blockquote>
+
+                    <p>Uno de los puntos débiles de <strong>WordPress es que no está concebido de base para dar soporte a la internacionalización de un sitio web</strong>. Por suerte existen varios plugins que han solventado esta carencia de una forma más que notable.</p>
+
+                    <p>Es importante tener en cuenta que <strong>una vez que internacionalizamos nuestro sitio, todos los plugins que usemos en él tienen que soportar esta característica</strong>, lo cual no siempre ocurre.</p>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://wpml.org/es/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WPML</a></li>
+                        <li><a href="https://wordpress.org/plugins/polylang/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Polylang</a></li>
+                        <li><a href="https://wordpress.org/plugins/loco-translate/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Loco Translate</a></li>
+                        <li><a href="https://wordpress.org/plugins/gtranslate/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Google Translate</a></li>
+                    </ul>
+
+
+                    <h4><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Utilidades</h4>
+                    <blockquote>
+                        <p>Aquí se recogen una variedad de plugins muy útiles y recomendados que cubren diversas funcionalidades como formularios, gestión de contenidos, etc.</p>
+                    </blockquote>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Formularios</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Contact Form 7</a></li>
+                                <li><a href="https://wordpress.org/plugins/wpforms-lite/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WPForms Lite</a></li>
+                                <li><a href="https://es.wordpress.org/plugins/ninja-forms/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Ninja Forms</a></li>
+                                <li><a href="https://wpeverest.com/wordpress-plugins/everest-forms/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Everest Forms</a></li>
+                                <li><a href="https://wordpress.org/plugins/user-registration/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> User Registration</a></li>
+                                <li><a href="https://wordpress.org/plugins/wp-mail-smtp/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Mail SMTP</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Optimización & Caché</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://wordpress.org/plugins/autoptimize/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Autoptimize</a></li>
+                                <li><a href="https://wordpress.org/plugins/wp-optimize/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Optimize</a></li>
+                                <li><a href="https://wordpress.org/plugins/jetpack/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> JetPack</a></li>
+                                <li><a href="https://wordpress.org/plugins/w3-total-cache/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> W3 Total Caché</a></li>
+                                <li><a href="https://wordpress.org/plugins/litespeed-cache/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Lite Speed Cache</a></li>
+                                <li><a href="https://wordpress.org/plugins/wp-fastest-cache/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Fastest Caché</a></li>
+                                <li><a href="https://wordpress.org/plugins/wp-super-cache/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> WP Super Caché</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <h4><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> Otros</h4>
+                    <blockquote>
+                        <p>Recopilación de otros tipos de recursos.</p>
+                    </blockquote>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <h6>WordPress como LMS</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://www.learndash.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Learndash</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>Membresía</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://memberpress.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Memberpress</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6">
+                            <h6>eCommerce</h6>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="https://woocommerce.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> wooCommerce (tiendas online)</a></li>
+                                <li><a href="https://rafflepress.com/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Raffle Press (Sorteos)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                    <h3 id="ebooks">eBooks y Cursos</h3>
+                    <blockquote>
+                        <p>Una selección de algunos de los enlaces con mejores recursos a ebooks gratuitos en la red, relacionados con WordPress.</p>
+                    </blockquote>
+
+                    <h4>Oficial</h4>
+                    <blockquote>
+                        <p>Aunque se indiquen recursos de wordpress.com muchos son válidos para la plataforma wordpress.org.</p>
+                    </blockquote>
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://wordpress.com/es/support/" target="_blank"><span class="glyphicon glyphicon-education"></span> Ayuda wordpress.com [es]</a></li>
+                        <li><a href="https://wordpress.org/support/" target="_blank"><span class="glyphicon glyphicon-education"></span> WordPress Support [en]</a></li>
+                        <li><a href="https://es.wordpress.org/support/" target="_blank"><span class="glyphicon glyphicon-education"></span> Soporte WordPress [es]</a></li>
+                    </ul>
+
+                    <h4>eBooks</h4>
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://tutorialwp.online/" target="_blank"><span class="glyphicon glyphicon-education"></span> Tutorial Wp 5, actualizado 2020 (<a href="https://tutorialwp.online/descargas/Guia-WordPress-TutorialWP.online.pdf" target="_blank">acceso directo al PDF</a>)</a></li>
+                        <li><a href="https://nonopp.com/cursos/WordPress/Manual-WordPress-CursoCamara2.pdf" target="_blank"><span class="glyphicon glyphicon-education"></span> Guía WP Fácil - Manual de WP (PDF no es última versión)</a></li>
+                        <li><a href="https://easywpguide.com/" target="_blank"><span class="glyphicon glyphicon-education"></span> Easy WP guide [en]</a></li>
+                        <li><a href="https://ithemes.com/publishing/getting-started-with-wordpress/" target="_blank"><span class="glyphicon glyphicon-education"></span> Getting Started with WP [en]</a></li>
+                        <li><a href="https://ithemes.com/publishing/ultimate-guide-to-wordpress-5-0-the-gutenberg-wordpress-editor/" target="_blank"><span class="glyphicon glyphicon-education"></span> Ultimate Guide to WordPress 5 [en]</a></li>
+                        <li><a href="https://highfive.getflywheel.com/wordpress-101" target="_blank"><span class="glyphicon glyphicon-education"></span> WordPress 101 [en]</a></li>
+                        <li><a href="https://highfive.getflywheel.com/common-beginner-wordpress-mistakes" target="_blank"><span class="glyphicon glyphicon-education"></span> Common Rookie WP mistakes [en]</a></li>
+                        <li><a href="https://www.packtpub.com/product/wordpress-5-cookbook/9781838986506" target="_blank"><span class="glyphicon glyphicon-education"></span> WordPress 5 Cookbook [en]</a></li>
+                        <li><a href="https://kinsta.com/ebooks/" target="_blank"><span class="glyphicon glyphicon-education"></span> Kinsta eBooks</a></li>
+                    </ul>
+
+                    <h4>Cursos y webs didácticas</h4>
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://ayudawp.com/curso-wordpress-online-gratuito-en-video/" target="_blank"><span class="glyphicon glyphicon-education"></span> Curso WordPress Online Gratuito (Fernando Tellado)</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=wqUjQ5zmbkM" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span> Curso WordPress Gratis desde 0 (Gonzalo de la Campa)</a></li>
+                        <li><a href="https://www.davidibiza.com/curso-de-wordpress/" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span> Curso WordPress Básico (David Ibiza)</a></li>
+                        <li><a href="https://gonzalonavarro.es/" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span> Curso WordPress Básico (Gonzalo Navarro)</a></li>
+                        <li><a href="https://www.emprendiz.com/curso-wordpress-online-gratis" target="_blank"><span class="glyphicon glyphicon-facetime-video"></span> Curso WordPress Paso a Paso (Emprendiz)</a></li>
+                        <li><a href="https://www.webempresa.com/university/curso-wordpress-gratis/" target="_blank"><span class="glyphicon glyphicon-education"></span> Curso WordPress 5 gratuito (webempresa)</a></li>
+                        <li><a href="https://www.wpbeginner.com/" target="_blank"><span class="glyphicon glyphicon-education"></span> Wp Beginner</a></li>
+                        <li><a href="https://kinsta.com/learn/" target="_blank"><span class="glyphicon glyphicon-education"></span> Kinsta Learn WP Center</a></li>
+                        <li><a href="https://ithemes.com/publishing/" target="_blank"><span class="glyphicon glyphicon-education"></span> iThemes Library</a></li>
+                    </ul>
+
+
+
+                    <h3 id="no-code">no-code</h3>
+                    <blockquote>
+                        <p>El movimiento no-code estáa suponiendo una revolución a la hora de construir en Internet. WordPress ha sido pionero en esa tarea pero existen otras herramientas que merece la pena conocer.</p>
+                    </blockquote>
+
+                    <ul class="list-unstyled link-list">
+                        <li><a href="https://nocodelist.co/" target="_blank"><span class="glyphicon glyphicon-link"></span> No Code List</a></li>
+                        <li><a href="https://www.nocode.tech/" target="_blank"><span class="glyphicon glyphicon-link"></span> No Code Tech</a></li>
+                        <li><a href="https://www.minimum.run/no-code-tools#country=spain" target="_blank"><span class="glyphicon glyphicon-link"></span> No Code Tools</a></li>
+                        <li><a href="https://zeroqode.com/" target="_blank"><span class="glyphicon glyphicon-link"></span>Zeroqode</a></li>
+                        <li><a href="https://nocodehq.com/" target="_blank"><span class="glyphicon glyphicon-link"></span>Nocode HQ</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row equal-height about-training" id="about-training">
+            <div class="col-xs-12">
+                <h2>Acerca de este curso</h2>
+            </div>
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Curso perteneciente al <strong>PLAN DE FORMACIÓN DEL PROFESORADO DE ESPECIALIDADES VINCULADAS A LA FP 2020</strong>, con código ARG0120CL</p>
+                        <h4>PROGRAMA OPERATIVO FSE CASTILLA Y LEÓN 2014-2020. ACTUACIÓN COFINANCIADA POR EL FONDO SOCIAL EUROPEO.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="logo-sponsor">
+                    <img src="img/jcyl.png" alt="Junta de Castilla y León">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                <div class="logo-sponsor">
+                    <img src="img/europa_impulsa.png" alt="Europa Impulsa">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                <div class="logo-sponsor">
+                    <img src="img/fse.png" alt="Fondo Social Europeo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+    $('.content-index').affix({
+        offset: {
+            top: 170,
+            bottom: function () {
+                return (this.bottom = $('#about-training').outerHeight(true))
+            }
+        }
+    })
+</script>
+</body>
+</html>
