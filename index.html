@@ -187,9 +187,9 @@
                         <li>Cumplimiento compleeto de los estándares web.</li>
                         <li>Muy <strong>buena gestión a nivel de SEO</strong>.</li>
                         <li>Soporte para multitud <strong>idiomas</strong>.</li>
-                        <li>Soporte a gran <strong>variedad de tipologías de web</strong>i>
+                        <li>Soporte a gran <strong>variedad de tipologías de web</strong>
                         <li>Muy <strong>extensible gracias al uso de plugins</strong> (contenidos, idiomas, ecommerce, social, seo).</li>
-                        <li><strong>Controles de edición / publicación  de serie</strong>rios, etc.</li>
+                        <li><strong>Controles de edición / publicación  de serie</strong>.</li>
                         <li>Sencillez en la gestión de medios.</li>
                     </ul>
 
@@ -282,7 +282,7 @@
 
                     <h3 id="users">Roles de Usuario</h3>
                     <blockquote>
-                        <p>WordPress tiene integrado un sistema de usuarios que permite disponer de un control más fino tanto en la gestión de contenidos, como en el acceso a la información en la web pública.</p>
+                        <p>WordPress tiene integrado un sistema de usuarios que permite disponer de un control más fino tanto en la gestión de contenidos, como en el acceso a la información en la web pública. <strong>Sin embargo este sistema se queda corto en cuanto se quiere usar para restringir el acceso a los contenidos.</strong></p>
                     </blockquote>
 
                     <ul class="list-unstyled link-doc">
@@ -309,10 +309,24 @@
                     <h4><span class="glyphicon glyphicon-user"></span> Súper Administrador</h4>
                     <p>Perfil que administra una red de sitios web basados en WordPress, teniendo acceso a la configuración de la red y a cada uno de los sitios que la conforman.</p>
 
+                    <div class="link-advise">
+                        <h4>🔒 Contenidos con acceso restringido</h4>
+                        <p>Lamentablemente, en cuanto queremos usar los roles de usuarios para restringir contenido, nos encontramos que WordPress solamente nos da la opción de poner una contraseña a un contenido tipo página o entrada para limitar su visibilidad, o permitir que sea visible para todos o para editores / adminstradores.</p>
+
+                        </p>Esto se queda corto cuando lo que queremos es limitar el acceso a usaurios convenicionales a determinados contenidos, en función de su rol.</p>
+
+
+                        <p>Para habilitar el registro a nuestra web basada en WordPress por parte de cualquier usuario hay que acceder a: <strong>Ajustes → Generales → Check "Miembros cualquiera puede registrarse"</strong>, y además inmediatamente después elegir el rol de entre los disponibles que se les asignará a ese tipo de registros.</p>
+                        <p>Una vez habilitado, se podrá acceder desde la dirección <code>http://mialojamiento.com/wp-login.php?action=register</code></p>
+                    </div>
+
+                    <p>Para lograrlo, existen algunos plugins que permiten extender el uso original ideado por WordPress, para poder emplear los roles para limitar el acceso a usuarios.</p>
+
                     <ul class="list-unstyled list-link">
                         <li><a href="https://wordpress.org/plugins/user-role-editor/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Plugin User Role Editor, para edición sencilla de roles.</a></li>
+                        <li><a href="https://wordpress.org/plugins/restrict-user-access/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Plugin Restrict User Access, para restringir acceso a contenidos por roles.</a></li>
+                        <li><a href="https://wordpress.org/plugins/restrict-content/" target="_blank"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Plugin Restrict Content, para restringir acceso a contenidos por roles.</a></li>
                     </ul>
-
 
 
                     <h3 id="themes-plugins">Temas y Plugins</h3>
@@ -367,7 +381,9 @@
                     <p>Adicionalmente, el núcleo de los tipos de contenidos gestionados por WordPress son las páginas y las entradas, y ambas se basan en un editor, que desde la versión 5 ha cambiado notablemente (el nuevo editor se llama Guttemberg y se conoce como el editor de bloques, frente al anterior que era un editor de texto enriquecido convencional)</p>
 
                     <ul class="list-unstyled link-doc">
-                        <a href="https://wordpress.org/support/article/wordpress-editor/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial. Editor de bloques</a>
+                        <li><a href="https://wordpress.com/es/support/editor-wordpress/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial (wordpress.com). Editor de bloques</a></li>
+                        <li><a href="https://wordpress.com/es/support/editor-wordpress/bloques/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial (wordpress.com). Listado completo de bloques</a></li>
+                        <li><a href="https://wordpress.org/support/article/wordpress-editor/" target="_blank"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> Ayuda oficial (wordpress.org). Editor de bloques [en]</a></li>
                     </ul>
 
 
